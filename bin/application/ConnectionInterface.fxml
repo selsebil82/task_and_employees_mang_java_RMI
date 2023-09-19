@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" opacity="0.98" prefHeight="503.0" prefWidth="834.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConnectionController">
+   <children>
+      <Button fx:id="connectButton" layoutX="510.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleConnectButton" opacity="0.78" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #CEDDDE; -fx-background-radius: 10;" text="connect" textFill="#00334a">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="usernameField" layoutX="510.0" layoutY="195.0" prefHeight="45.0" prefWidth="296.0" />
+      <Label layoutX="380.0" layoutY="203.0" prefHeight="37.0" prefWidth="117.0" text="Username :" textFill="#00334a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="381.0" layoutY="279.0" prefHeight="37.0" prefWidth="117.0" text="password :" textFill="#00334a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordField" layoutX="510.0" layoutY="275.0" prefHeight="45.0" prefWidth="296.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00334a" height="503.0" layoutX="-9.0" stroke="BLACK" strokeType="INSIDE" width="357.0" />
+      <ImageView fitHeight="159.0" fitWidth="162.0" layoutX="90.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-lock-500.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="276.0" prefHeight="28.0" prefWidth="296.0" text="Login to your Task And Employees" textFill="#ceddde">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="333.0" text="Managment System" textFill="#ceddde">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="94.0" fitWidth="141.0" layoutX="554.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
+         <image>
+            <Image url="@../../../icons8-manager-96.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

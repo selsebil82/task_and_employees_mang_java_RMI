@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="834.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TaskController">
+   <children>
+      <TableView fx:id="taskTable" layoutX="11.0" layoutY="12.0" prefHeight="173.0" prefWidth="810.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="descriptionCol" prefWidth="630.0" text="Description" />
+            <TableColumn fx:id="empidCol" prefWidth="104.0" text="Employee Id" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="255.0" layoutY="429.0" mnemonicParsing="false" onAction="#addTask" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #CEDDDE;" text="Add">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="398.0" layoutY="429.0" mnemonicParsing="false" onAction="#updateTask" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #CEDDDE;" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="533.0" layoutY="429.0" mnemonicParsing="false" onAction="#deleteTask" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #CEDDDE;" text="Delete">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="fieldId" layoutX="353.0" layoutY="225.0" />
+      <TextField fx:id="fieldDescription" layoutX="353.0" layoutY="274.0" />
+      <TextField fx:id="fieldEmpid" layoutX="353.0" layoutY="321.0" />
+      <Label layoutX="226.0" layoutY="229.0" text="Id :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="224.0" layoutY="276.0" text="Description :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="224.0" layoutY="324.0" text="Employee Id :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button id="btnReturn" fx:id="btnReturn" layoutX="685.0" layoutY="425.0" mnemonicParsing="false" onAction="#returnToEntities" prefHeight="58.0" prefWidth="127.0" style="-fx-background-color: #ffff;" />
+      <ImageView fitHeight="97.0" fitWidth="77.0" layoutX="36.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-reminders-500(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="58.0" layoutX="739.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-restart-500.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="58.0" layoutX="206.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-plus-500.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="351.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-refresh-500.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="484.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-multiply-100.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="resetTask" layoutX="90.0" layoutY="390.0" maxHeight="30.0" maxWidth="70.0" mnemonicParsing="false" onMouseClicked="#clearFieldsTask" style="-fx-background-color: #CEDDDE;" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

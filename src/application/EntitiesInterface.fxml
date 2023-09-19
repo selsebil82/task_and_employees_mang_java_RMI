@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="834.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EntitiesController">
+   <children>
+      <Button fx:id="taskbtn" layoutX="450.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleConnectButton1" prefHeight="114.0" prefWidth="294.0" style="-fx-background-color: #CEDDDE; -fx-background-radius: 100;" text="Task managment" textFill="#00334a">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="emplbtn" layoutX="451.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleConnectButton2" prefHeight="114.0" prefWidth="294.0" style="-fx-background-color: #CEDDDE; -fx-background-radius: 100;" text="Employee Managment" textFill="#00334a">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00334a" height="503.0" layoutX="-8.0" stroke="BLACK" strokeType="INSIDE" width="343.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="89.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-cursor-500(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="61.0" layoutY="277.0" text="With what will you start today ? " textFill="#ceddde">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="321.0" text="Select your option" textFill="#ceddde">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="416.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+         <image>
+            <Image url="@../../../icons8-system-task-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="415.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+         <image>
+            <Image url="@../../../icons8-user-groups-100.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="LogoutButton" layoutX="75.0" layoutY="435.0" mnemonicParsing="false" onAction="#onLogoutClicked" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #ceddde;" text="Logout" textFill="#00334a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="130.0" layoutY="367.0" prefHeight="18.0" prefWidth="83.0" text="Or logout" textFill="#ceddde">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
